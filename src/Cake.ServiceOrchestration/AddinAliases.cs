@@ -13,7 +13,7 @@ namespace Cake.ServiceOrchestration
     public static class AddinAliases
     {
         [CakeMethodAlias]
-        public static ServiceManager DefineService(this ICakeContext ctx, FilePath projectPath, string serviceName)
+        public static IServiceManager DefineService(this ICakeContext ctx, FilePath projectPath, string serviceName)
         {
             if (ctx == null) throw new ArgumentNullException(nameof(ctx));
             var d = new ServiceDescriptor(projectPath, serviceName);
