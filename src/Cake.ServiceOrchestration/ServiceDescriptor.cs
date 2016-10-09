@@ -1,11 +1,5 @@
 ﻿using Cake.Core.IO;
 
-public interface IServiceDescriptor
-{
-    FilePath ProjectFile { get; set; }
-    string Name { get; set; }
-}
-
 public class ServiceDescriptor : IServiceDescriptor
 {
     public FilePath ProjectFile { get; set; }

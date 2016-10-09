@@ -6,18 +6,6 @@ using Cake.Core.Diagnostics;
 
 namespace Cake.ServiceOrchestration
 {
-    public interface IServiceManager
-    {
-        IServiceDescriptor Definition { get; }
-        List<IServiceInstance> Instances { get; }
-        IServiceManager RegisterDeployAction(IServiceAction action);
-        IServiceManager RegisterSetupAction(IServiceAction action);
-        IServiceManager RegisterConfigureAction(IServiceAction action);
-        void DeployService();
-        IServiceInstance this[string hostname] { get; }
-        IServiceInstance this[int index] { get; }
-    }
-
     public class ServiceManager : IServiceManager
     {
         private List<Action<ICakeContext, IServiceInstance>> SetupActions { get; } = new List<Action<ICakeContext, IServiceInstance>>();
@@ -89,12 +77,5 @@ namespace Cake.ServiceOrchestration
         public IServiceInstance this[string hostname] => Instances.FirstOrDefault(i => i.InstanceUri.ToString() == hostname);
 
         public IServiceInstance this[int index] => Instances[index];
-    }
-
-    public enum DeployPhase
-    {
-        Setup,
-        Deploy,
-        Configure
     }
 }

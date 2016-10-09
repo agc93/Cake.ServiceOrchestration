@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+	<metadata>
+		<id>Cake.ServiceOrchestration</id>
+		<title>Cake.ServiceOrchestration</title>
+		<authors>Alistair Chapman</authors>
+		<owners>Alistair Chapman</owners>
+        <version>0.1</version>
+		<licenseUrl>https://raw.githubusercontent.com/agc93/Cake.ServiceOrchestration/master/LICENSE</licenseUrl>
+		<projectUrl>https://github.com/agc93/Cake.ServiceOrchestration/</projectUrl>
+		<iconUrl>https://raw.githubusercontent.com/NSwag/NSwag/master/assets/NuGetIcon.png</iconUrl>
+		<language>en-AU</language>
+		<description>A sample/reference approach to multi-instance service deployment and orchestration using Cake</description>
+		<tags>cake build microservices deployment orchestration</tags>
+		<dependencies>
+	    </dependencies>
+	</metadata>
+	<files>
+		<file src="dist\lib\Cake.ServiceOrchestration.dll" target="lib\netstandard1.6" />
+		<file src="dist\lib\Cake.ServiceOrchestration.xml" target="lib\netstandard1.6" />
+	</files>
+</package>
