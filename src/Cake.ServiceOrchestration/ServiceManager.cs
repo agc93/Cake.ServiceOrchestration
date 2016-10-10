@@ -115,7 +115,7 @@ namespace Cake.ServiceOrchestration
         {
             foreach (var action in actions)
             {
-                _context.Log.Information($"Running {phase} action ({actions.IndexOf(action)} of {actions.Count})");
+                _context.Log.Information($"Running {phase} action ({actions.IndexOf(action) + 1} of {actions.Count})");
                 try
                 {
                     action.Invoke(_context, instance);

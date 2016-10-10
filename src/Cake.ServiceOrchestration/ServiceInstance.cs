@@ -37,7 +37,7 @@ namespace Cake.ServiceOrchestration
         ///     Gets a remotely accessible path for this instance.
         /// </summary>
         /// <remarks>May be null or empty if not remotely accessible.</remarks>
-        public DirectoryPath RemotePath { get; internal set; }
+        public string RemotePath { get; internal set; }
 
         /// <summary>
         ///     Gets the instance-local "install" path for this instance.

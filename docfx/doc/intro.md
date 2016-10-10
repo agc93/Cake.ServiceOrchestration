@@ -12,6 +12,8 @@ You can install the package in your build scripts using `#addin` as per usual, f
 #addin nuget:?package=Cake.ServiceOrchestration
 ```
 
+> Make sure you get version 0.2 or later, which introduced a breaking change to fix a bug in 0.1.x
+
 You can then use the `DefineService` alias and all the other types included in the library to define and orchestrate your services.
 
 ## Getting started
