@@ -71,6 +71,9 @@ Task("Restore")
 	// Restore all NuGet packages.
 	Information("Restoring solution...");
 	NuGetRestore(solutionPath);
+    foreach(var project in projects.Where(IsProject)) {
+        DotNetCoreRestore(project.Path.GetDirectory() + "/project.json");
+    }
 });
 
 Task("Build")

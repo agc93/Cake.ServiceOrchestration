@@ -8,3 +8,5 @@ List<NuSpecContent> GetContent(IEnumerable<string> frameworks, DirectoryPath lib
         new NuSpecContent() { Source = artifacts + "lib/" + f + "/Cake.ServiceOrchestration.xml", Target = "lib/" + f}
     }).ToList();
 }
+
+Func<SolutionProject, bool> IsProject = p => p.Type != "{2150E333-8FDC-42A3-9474-1A3956D46DE8}";
