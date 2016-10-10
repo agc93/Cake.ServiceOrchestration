@@ -1,22 +1,25 @@
 ﻿using Cake.Core.IO;
 
-public class ServiceDescriptor : IServiceDescriptor
+namespace Cake.ServiceOrchestration
 {
-    public FilePath ProjectFile { get; set; }
-    public string Name { get; set; }
-
-    internal ServiceDescriptor(FilePath projectPath)
+    public class ServiceDescriptor : IServiceDescriptor
     {
-        ProjectFile = projectPath;
-        Name = projectPath.GetFilenameWithoutExtension()
-            .ToString()
-            .Replace("StatusApi", string.Empty)
-            .Trim('.');
-    }
+        internal ServiceDescriptor(FilePath projectPath)
+        {
+            ProjectFile = projectPath;
+            Name = projectPath.GetFilenameWithoutExtension()
+                .ToString()
+                .Replace("StatusApi", string.Empty)
+                .Trim('.');
+        }
 
-    internal ServiceDescriptor(FilePath projectPath, string serviceName)
-    {
-        ProjectFile = projectPath;
-        Name = serviceName;
+        internal ServiceDescriptor(FilePath projectPath, string serviceName)
+        {
+            ProjectFile = projectPath;
+            Name = serviceName;
+        }
+
+        public FilePath ProjectFile { get; set; }
+        public string Name { get; set; }
     }
 }

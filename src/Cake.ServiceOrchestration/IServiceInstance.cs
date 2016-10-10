@@ -1,10 +1,13 @@
 using System;
 using Cake.Core.IO;
 
-public interface IServiceInstance
+namespace Cake.ServiceOrchestration
 {
-    IServiceDescriptor Service { get; }
-    Uri InstanceUri { get; }
-    DirectoryPath RemotePath { get; }
-    DirectoryPath LocalPath { get; }
+    public interface IServiceInstance
+    {
+        IServiceDescriptor Service { get; }
+        Uri InstanceUri { get; }
+        DirectoryPath RemotePath { get; }
+        DirectoryPath LocalPath { get; }
+    }
 }

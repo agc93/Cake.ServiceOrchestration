@@ -1,5 +1,4 @@
 using System;
-using System.Dynamic;
 
 namespace Cake.ServiceOrchestration
 {
@@ -20,7 +19,8 @@ namespace Cake.ServiceOrchestration
             Phase = phase;
         }
 
-        public ActionInvocationException(DeployPhase phase, IServiceAction action, Exception ex) : this(GetMessage(phase, action), ex)
+        public ActionInvocationException(DeployPhase phase, IServiceAction action, Exception ex)
+            : this(GetMessage(phase, action), ex)
         {
             FailedAction = action;
             Phase = phase;
@@ -28,8 +28,11 @@ namespace Cake.ServiceOrchestration
 
         private ActionInvocationException(string message, Exception ex) : base(message, ex)
         {
-            
         }
+
+        public IServiceAction FailedAction { get; }
+
+        public DeployPhase Phase { get; }
 
         private static string GetMessage(DeployPhase phase)
         {
@@ -40,9 +43,5 @@ namespace Cake.ServiceOrchestration
         {
             return $"Deployment failed during {phase} phase while executing {action.GetType().FullName}";
         }
-
-        public IServiceAction FailedAction { get; }
-
-        public DeployPhase Phase { get; }
     }
 }

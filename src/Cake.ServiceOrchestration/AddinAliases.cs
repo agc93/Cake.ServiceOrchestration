@@ -1,16 +1,13 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using Cake.Core;
 using Cake.Core.Annotations;
-using Cake.Core.Diagnostics;
 using Cake.Core.IO;
 
 namespace Cake.ServiceOrchestration
 {
-    [CakeAliasCategory("Sample")]
-    public static class AddinAliases
+    [CakeAliasCategory("Orchestration")]
+    [CakeNamespaceImport("Cake.ServiceOrchestration")]
+    public static class ServiceOrchestrationAliases
     {
         [CakeMethodAlias]
         public static IServiceManager DefineService(this ICakeContext ctx, FilePath projectPath, string serviceName)

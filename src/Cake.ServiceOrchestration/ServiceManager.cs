@@ -8,9 +8,6 @@ namespace Cake.ServiceOrchestration
 {
     public class ServiceManager : IServiceManager
     {
-        private List<Action<ICakeContext, IServiceInstance>> SetupActions { get; } = new List<Action<ICakeContext, IServiceInstance>>();
-        private List<Action<ICakeContext, IServiceInstance>> DeployActions { get; } = new List<Action<ICakeContext, IServiceInstance>>();
-        private List<Action<ICakeContext, IServiceInstance>> ConfigureActions { get; } = new List<Action<ICakeContext, IServiceInstance>>();
         private readonly ICakeContext _context;
 
         internal ServiceManager(ICakeContext ctx, IServiceDescriptor descriptor)
@@ -18,6 +15,17 @@ namespace Cake.ServiceOrchestration
             _context = ctx;
             Definition = descriptor;
         }
+
+        private List<Action<ICakeContext, IServiceInstance>> SetupActions { get; } =
+            new List<Action<ICakeContext, IServiceInstance>>();
+
+        private List<Action<ICakeContext, IServiceInstance>> DeployActions { get; } =
+            new List<Action<ICakeContext, IServiceInstance>>();
+
+        private List<Action<ICakeContext, IServiceInstance>> ConfigureActions { get; } =
+            new List<Action<ICakeContext, IServiceInstance>>();
+
+        public IServiceInstance this[int index] => Instances[index];
         public IServiceDescriptor Definition { get; }
         public List<IServiceInstance> Instances { get; } = new List<IServiceInstance>();
 
@@ -58,7 +66,11 @@ namespace Cake.ServiceOrchestration
             }
         }
 
-        private void RunActions(List<Action<ICakeContext, IServiceInstance>> actions, DeployPhase phase, IServiceInstance instance)
+        public IServiceInstance this[string hostname]
+            => Instances.FirstOrDefault(i => i.InstanceUri.ToString() == hostname);
+
+        private void RunActions(List<Action<ICakeContext, IServiceInstance>> actions, DeployPhase phase,
+            IServiceInstance instance)
         {
             foreach (var action in actions)
             {
@@ -73,9 +85,5 @@ namespace Cake.ServiceOrchestration
                 }
             }
         }
-
-        public IServiceInstance this[string hostname] => Instances.FirstOrDefault(i => i.InstanceUri.ToString() == hostname);
-
-        public IServiceInstance this[int index] => Instances[index];
     }
 }

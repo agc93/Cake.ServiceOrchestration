@@ -11,3 +11,9 @@ You can install the package in your build scripts using `#addin` as per usual, f
 ```csharp
 #addin nuget:?package=Cake.ServiceOrchestration
 ```
+
+You can then use the `DefineService` alias and all the other types included in the library to define and orchestrate your services.
+
+## Getting started
+
+First read the [Getting Started](getting-started.md) guide to get a feel for how this framework is designed, or you can find basic annotated examples in the Samples documentation. To find out more about the library and how to apply it in your own projects, check the [Background](background.md) documentation.

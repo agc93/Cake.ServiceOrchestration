@@ -1,6 +1,6 @@
-# Cake.NSwag
+# Cake.ServiceOrchestration
 
-A flexible Cake addin powered by the NSwag toolchain for processing and generating Swagger specifications.
+A prototype framework and Cake addin designed to demonstrate orchestrating multi-instance service deployments using Cake scripting.
 
 # Using this documentation:
 
