@@ -11,7 +11,7 @@
 
 var target = Argument<string>("target", "Default");
 var configuration = Argument<string>("configuration", "Release");
-var framework = Argument<string>("framework", "netstandard1.6,net451");
+var framework = Argument<string>("framework", "netstandard1.6,net45");
 
 ///////////////////////////////////////////////////////////////////////////////
 // GLOBAL VARIABLES
