@@ -262,16 +262,16 @@ references:
   href: api/Cake.ServiceOrchestration.ServiceManagerExtensions.html#Cake_ServiceOrchestration_ServiceManagerExtensions
   commentId: T:Cake.ServiceOrchestration.ServiceManagerExtensions
   fullName: Cake.ServiceOrchestration.ServiceManagerExtensions
-- uid: Cake.ServiceOrchestration.ServiceManagerExtensions.CreateInstanceFor(Cake.ServiceOrchestration.IServiceManager,System.String,DirectoryPath,DirectoryPath)
-  name: CreateInstanceFor(IServiceManager, String, DirectoryPath, DirectoryPath)
-  href: api/Cake.ServiceOrchestration.ServiceManagerExtensions.html#Cake_ServiceOrchestration_ServiceManagerExtensions_CreateInstanceFor_Cake_ServiceOrchestration_IServiceManager_System_String_DirectoryPath_DirectoryPath_
-  commentId: M:Cake.ServiceOrchestration.ServiceManagerExtensions.CreateInstanceFor(Cake.ServiceOrchestration.IServiceManager,System.String,DirectoryPath,DirectoryPath)
-  fullName: Cake.ServiceOrchestration.ServiceManagerExtensions.CreateInstanceFor(Cake.ServiceOrchestration.IServiceManager, System.String, DirectoryPath, DirectoryPath)
-- uid: Cake.ServiceOrchestration.ServiceManagerExtensions.CreateInstanceFor(Cake.ServiceOrchestration.IServiceManager,Uri,DirectoryPath,DirectoryPath)
-  name: CreateInstanceFor(IServiceManager, Uri, DirectoryPath, DirectoryPath)
-  href: api/Cake.ServiceOrchestration.ServiceManagerExtensions.html#Cake_ServiceOrchestration_ServiceManagerExtensions_CreateInstanceFor_Cake_ServiceOrchestration_IServiceManager_Uri_DirectoryPath_DirectoryPath_
-  commentId: M:Cake.ServiceOrchestration.ServiceManagerExtensions.CreateInstanceFor(Cake.ServiceOrchestration.IServiceManager,Uri,DirectoryPath,DirectoryPath)
-  fullName: Cake.ServiceOrchestration.ServiceManagerExtensions.CreateInstanceFor(Cake.ServiceOrchestration.IServiceManager, Uri, DirectoryPath, DirectoryPath)
+- uid: Cake.ServiceOrchestration.ServiceManagerExtensions.CreateInstanceFor(Cake.ServiceOrchestration.IServiceManager,System.String,System.String,DirectoryPath)
+  name: CreateInstanceFor(IServiceManager, String, String, DirectoryPath)
+  href: api/Cake.ServiceOrchestration.ServiceManagerExtensions.html#Cake_ServiceOrchestration_ServiceManagerExtensions_CreateInstanceFor_Cake_ServiceOrchestration_IServiceManager_System_String_System_String_DirectoryPath_
+  commentId: M:Cake.ServiceOrchestration.ServiceManagerExtensions.CreateInstanceFor(Cake.ServiceOrchestration.IServiceManager,System.String,System.String,DirectoryPath)
+  fullName: Cake.ServiceOrchestration.ServiceManagerExtensions.CreateInstanceFor(Cake.ServiceOrchestration.IServiceManager, System.String, System.String, DirectoryPath)
+- uid: Cake.ServiceOrchestration.ServiceManagerExtensions.CreateInstanceFor(Cake.ServiceOrchestration.IServiceManager,Uri,System.String,DirectoryPath)
+  name: CreateInstanceFor(IServiceManager, Uri, String, DirectoryPath)
+  href: api/Cake.ServiceOrchestration.ServiceManagerExtensions.html#Cake_ServiceOrchestration_ServiceManagerExtensions_CreateInstanceFor_Cake_ServiceOrchestration_IServiceManager_Uri_System_String_DirectoryPath_
+  commentId: M:Cake.ServiceOrchestration.ServiceManagerExtensions.CreateInstanceFor(Cake.ServiceOrchestration.IServiceManager,Uri,System.String,DirectoryPath)
+  fullName: Cake.ServiceOrchestration.ServiceManagerExtensions.CreateInstanceFor(Cake.ServiceOrchestration.IServiceManager, Uri, System.String, DirectoryPath)
 - uid: Cake.ServiceOrchestration.ServiceManagerExtensions.RegisterConfigureAction(Cake.ServiceOrchestration.IServiceManager,System.Action{ICakeContext,Cake.ServiceOrchestration.IServiceInstance})
   name: RegisterConfigureAction(IServiceManager, Action<ICakeContext, IServiceInstance>)
   href: api/Cake.ServiceOrchestration.ServiceManagerExtensions.html#Cake_ServiceOrchestration_ServiceManagerExtensions_RegisterConfigureAction_Cake_ServiceOrchestration_IServiceManager_System_Action_ICakeContext_Cake_ServiceOrchestration_IServiceInstance__
