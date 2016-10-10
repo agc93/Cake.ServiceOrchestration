@@ -1,0 +1,326 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: Cake.ServiceOrchestration
+  name: Cake.ServiceOrchestration
+  href: api/Cake.ServiceOrchestration.html#Cake_ServiceOrchestration
+  commentId: N:Cake.ServiceOrchestration
+  fullName: Cake.ServiceOrchestration
+- uid: Cake.ServiceOrchestration.ActionInvocationException
+  name: ActionInvocationException
+  href: api/Cake.ServiceOrchestration.ActionInvocationException.html#Cake_ServiceOrchestration_ActionInvocationException
+  commentId: T:Cake.ServiceOrchestration.ActionInvocationException
+  fullName: Cake.ServiceOrchestration.ActionInvocationException
+- uid: Cake.ServiceOrchestration.ActionInvocationException.#ctor(Cake.ServiceOrchestration.DeployPhase)
+  name: ActionInvocationException(DeployPhase)
+  href: api/Cake.ServiceOrchestration.ActionInvocationException.html#Cake_ServiceOrchestration_ActionInvocationException__ctor_Cake_ServiceOrchestration_DeployPhase_
+  commentId: M:Cake.ServiceOrchestration.ActionInvocationException.#ctor(Cake.ServiceOrchestration.DeployPhase)
+  fullName: Cake.ServiceOrchestration.ActionInvocationException.ActionInvocationException(Cake.ServiceOrchestration.DeployPhase)
+- uid: Cake.ServiceOrchestration.ActionInvocationException.#ctor(Cake.ServiceOrchestration.DeployPhase,Cake.ServiceOrchestration.IServiceAction)
+  name: ActionInvocationException(DeployPhase, IServiceAction)
+  href: api/Cake.ServiceOrchestration.ActionInvocationException.html#Cake_ServiceOrchestration_ActionInvocationException__ctor_Cake_ServiceOrchestration_DeployPhase_Cake_ServiceOrchestration_IServiceAction_
+  commentId: M:Cake.ServiceOrchestration.ActionInvocationException.#ctor(Cake.ServiceOrchestration.DeployPhase,Cake.ServiceOrchestration.IServiceAction)
+  fullName: Cake.ServiceOrchestration.ActionInvocationException.ActionInvocationException(Cake.ServiceOrchestration.DeployPhase, Cake.ServiceOrchestration.IServiceAction)
+- uid: Cake.ServiceOrchestration.ActionInvocationException.#ctor(Cake.ServiceOrchestration.DeployPhase,Cake.ServiceOrchestration.IServiceAction,System.Exception)
+  name: ActionInvocationException(DeployPhase, IServiceAction, Exception)
+  href: api/Cake.ServiceOrchestration.ActionInvocationException.html#Cake_ServiceOrchestration_ActionInvocationException__ctor_Cake_ServiceOrchestration_DeployPhase_Cake_ServiceOrchestration_IServiceAction_System_Exception_
+  commentId: M:Cake.ServiceOrchestration.ActionInvocationException.#ctor(Cake.ServiceOrchestration.DeployPhase,Cake.ServiceOrchestration.IServiceAction,System.Exception)
+  fullName: Cake.ServiceOrchestration.ActionInvocationException.ActionInvocationException(Cake.ServiceOrchestration.DeployPhase, Cake.ServiceOrchestration.IServiceAction, System.Exception)
+- uid: Cake.ServiceOrchestration.ActionInvocationException.#ctor(Cake.ServiceOrchestration.DeployPhase,System.Exception)
+  name: ActionInvocationException(DeployPhase, Exception)
+  href: api/Cake.ServiceOrchestration.ActionInvocationException.html#Cake_ServiceOrchestration_ActionInvocationException__ctor_Cake_ServiceOrchestration_DeployPhase_System_Exception_
+  commentId: M:Cake.ServiceOrchestration.ActionInvocationException.#ctor(Cake.ServiceOrchestration.DeployPhase,System.Exception)
+  fullName: Cake.ServiceOrchestration.ActionInvocationException.ActionInvocationException(Cake.ServiceOrchestration.DeployPhase, System.Exception)
+- uid: Cake.ServiceOrchestration.ActionInvocationException.FailedAction
+  name: FailedAction
+  href: api/Cake.ServiceOrchestration.ActionInvocationException.html#Cake_ServiceOrchestration_ActionInvocationException_FailedAction
+  commentId: P:Cake.ServiceOrchestration.ActionInvocationException.FailedAction
+  fullName: Cake.ServiceOrchestration.ActionInvocationException.FailedAction
+- uid: Cake.ServiceOrchestration.ActionInvocationException.Phase
+  name: Phase
+  href: api/Cake.ServiceOrchestration.ActionInvocationException.html#Cake_ServiceOrchestration_ActionInvocationException_Phase
+  commentId: P:Cake.ServiceOrchestration.ActionInvocationException.Phase
+  fullName: Cake.ServiceOrchestration.ActionInvocationException.Phase
+- uid: Cake.ServiceOrchestration.DeployPhase
+  name: DeployPhase
+  href: api/Cake.ServiceOrchestration.DeployPhase.html#Cake_ServiceOrchestration_DeployPhase
+  commentId: T:Cake.ServiceOrchestration.DeployPhase
+  fullName: Cake.ServiceOrchestration.DeployPhase
+- uid: Cake.ServiceOrchestration.DeployPhase.Configure
+  name: Configure
+  href: api/Cake.ServiceOrchestration.DeployPhase.html#Cake_ServiceOrchestration_DeployPhase_Configure
+  commentId: F:Cake.ServiceOrchestration.DeployPhase.Configure
+  fullName: Cake.ServiceOrchestration.DeployPhase.Configure
+- uid: Cake.ServiceOrchestration.DeployPhase.Definition
+  name: Definition
+  href: api/Cake.ServiceOrchestration.DeployPhase.html#Cake_ServiceOrchestration_DeployPhase_Definition
+  commentId: F:Cake.ServiceOrchestration.DeployPhase.Definition
+  fullName: Cake.ServiceOrchestration.DeployPhase.Definition
+- uid: Cake.ServiceOrchestration.DeployPhase.Deploy
+  name: Deploy
+  href: api/Cake.ServiceOrchestration.DeployPhase.html#Cake_ServiceOrchestration_DeployPhase_Deploy
+  commentId: F:Cake.ServiceOrchestration.DeployPhase.Deploy
+  fullName: Cake.ServiceOrchestration.DeployPhase.Deploy
+- uid: Cake.ServiceOrchestration.DeployPhase.Setup
+  name: Setup
+  href: api/Cake.ServiceOrchestration.DeployPhase.html#Cake_ServiceOrchestration_DeployPhase_Setup
+  commentId: F:Cake.ServiceOrchestration.DeployPhase.Setup
+  fullName: Cake.ServiceOrchestration.DeployPhase.Setup
+- uid: Cake.ServiceOrchestration.IServiceAction
+  name: IServiceAction
+  href: api/Cake.ServiceOrchestration.IServiceAction.html#Cake_ServiceOrchestration_IServiceAction
+  commentId: T:Cake.ServiceOrchestration.IServiceAction
+  fullName: Cake.ServiceOrchestration.IServiceAction
+- uid: Cake.ServiceOrchestration.IServiceAction.Run(ICakeContext,Cake.ServiceOrchestration.IServiceInstance)
+  name: Run(ICakeContext, IServiceInstance)
+  href: api/Cake.ServiceOrchestration.IServiceAction.html#Cake_ServiceOrchestration_IServiceAction_Run_ICakeContext_Cake_ServiceOrchestration_IServiceInstance_
+  commentId: M:Cake.ServiceOrchestration.IServiceAction.Run(ICakeContext,Cake.ServiceOrchestration.IServiceInstance)
+  fullName: Cake.ServiceOrchestration.IServiceAction.Run(ICakeContext, Cake.ServiceOrchestration.IServiceInstance)
+- uid: Cake.ServiceOrchestration.IServiceDescriptor
+  name: IServiceDescriptor
+  href: api/Cake.ServiceOrchestration.IServiceDescriptor.html#Cake_ServiceOrchestration_IServiceDescriptor
+  commentId: T:Cake.ServiceOrchestration.IServiceDescriptor
+  fullName: Cake.ServiceOrchestration.IServiceDescriptor
+- uid: Cake.ServiceOrchestration.IServiceDescriptor.Name
+  name: Name
+  href: api/Cake.ServiceOrchestration.IServiceDescriptor.html#Cake_ServiceOrchestration_IServiceDescriptor_Name
+  commentId: P:Cake.ServiceOrchestration.IServiceDescriptor.Name
+  fullName: Cake.ServiceOrchestration.IServiceDescriptor.Name
+- uid: Cake.ServiceOrchestration.IServiceDescriptor.ProjectFile
+  name: ProjectFile
+  href: api/Cake.ServiceOrchestration.IServiceDescriptor.html#Cake_ServiceOrchestration_IServiceDescriptor_ProjectFile
+  commentId: P:Cake.ServiceOrchestration.IServiceDescriptor.ProjectFile
+  fullName: Cake.ServiceOrchestration.IServiceDescriptor.ProjectFile
+- uid: Cake.ServiceOrchestration.IServiceInstance
+  name: IServiceInstance
+  href: api/Cake.ServiceOrchestration.IServiceInstance.html#Cake_ServiceOrchestration_IServiceInstance
+  commentId: T:Cake.ServiceOrchestration.IServiceInstance
+  fullName: Cake.ServiceOrchestration.IServiceInstance
+- uid: Cake.ServiceOrchestration.IServiceInstance.InstanceUri
+  name: InstanceUri
+  href: api/Cake.ServiceOrchestration.IServiceInstance.html#Cake_ServiceOrchestration_IServiceInstance_InstanceUri
+  commentId: P:Cake.ServiceOrchestration.IServiceInstance.InstanceUri
+  fullName: Cake.ServiceOrchestration.IServiceInstance.InstanceUri
+- uid: Cake.ServiceOrchestration.IServiceInstance.LocalPath
+  name: LocalPath
+  href: api/Cake.ServiceOrchestration.IServiceInstance.html#Cake_ServiceOrchestration_IServiceInstance_LocalPath
+  commentId: P:Cake.ServiceOrchestration.IServiceInstance.LocalPath
+  fullName: Cake.ServiceOrchestration.IServiceInstance.LocalPath
+- uid: Cake.ServiceOrchestration.IServiceInstance.RemotePath
+  name: RemotePath
+  href: api/Cake.ServiceOrchestration.IServiceInstance.html#Cake_ServiceOrchestration_IServiceInstance_RemotePath
+  commentId: P:Cake.ServiceOrchestration.IServiceInstance.RemotePath
+  fullName: Cake.ServiceOrchestration.IServiceInstance.RemotePath
+- uid: Cake.ServiceOrchestration.IServiceInstance.Service
+  name: Service
+  href: api/Cake.ServiceOrchestration.IServiceInstance.html#Cake_ServiceOrchestration_IServiceInstance_Service
+  commentId: P:Cake.ServiceOrchestration.IServiceInstance.Service
+  fullName: Cake.ServiceOrchestration.IServiceInstance.Service
+- uid: Cake.ServiceOrchestration.IServiceManager
+  name: IServiceManager
+  href: api/Cake.ServiceOrchestration.IServiceManager.html#Cake_ServiceOrchestration_IServiceManager
+  commentId: T:Cake.ServiceOrchestration.IServiceManager
+  fullName: Cake.ServiceOrchestration.IServiceManager
+- uid: Cake.ServiceOrchestration.IServiceManager.Definition
+  name: Definition
+  href: api/Cake.ServiceOrchestration.IServiceManager.html#Cake_ServiceOrchestration_IServiceManager_Definition
+  commentId: P:Cake.ServiceOrchestration.IServiceManager.Definition
+  fullName: Cake.ServiceOrchestration.IServiceManager.Definition
+- uid: Cake.ServiceOrchestration.IServiceManager.DeployService
+  name: DeployService()
+  href: api/Cake.ServiceOrchestration.IServiceManager.html#Cake_ServiceOrchestration_IServiceManager_DeployService
+  commentId: M:Cake.ServiceOrchestration.IServiceManager.DeployService
+  fullName: Cake.ServiceOrchestration.IServiceManager.DeployService()
+- uid: Cake.ServiceOrchestration.IServiceManager.Instances
+  name: Instances
+  href: api/Cake.ServiceOrchestration.IServiceManager.html#Cake_ServiceOrchestration_IServiceManager_Instances
+  commentId: P:Cake.ServiceOrchestration.IServiceManager.Instances
+  fullName: Cake.ServiceOrchestration.IServiceManager.Instances
+- uid: Cake.ServiceOrchestration.IServiceManager.Item(System.String)
+  name: Item[String]
+  href: api/Cake.ServiceOrchestration.IServiceManager.html#Cake_ServiceOrchestration_IServiceManager_Item_System_String_
+  commentId: P:Cake.ServiceOrchestration.IServiceManager.Item(System.String)
+  name.vb: Item(String)
+  fullName: Cake.ServiceOrchestration.IServiceManager.Item[System.String]
+  fullName.vb: Cake.ServiceOrchestration.IServiceManager.Item(System.String)
+- uid: Cake.ServiceOrchestration.IServiceManager.RegisterConfigureAction(Cake.ServiceOrchestration.IServiceAction)
+  name: RegisterConfigureAction(IServiceAction)
+  href: api/Cake.ServiceOrchestration.IServiceManager.html#Cake_ServiceOrchestration_IServiceManager_RegisterConfigureAction_Cake_ServiceOrchestration_IServiceAction_
+  commentId: M:Cake.ServiceOrchestration.IServiceManager.RegisterConfigureAction(Cake.ServiceOrchestration.IServiceAction)
+  fullName: Cake.ServiceOrchestration.IServiceManager.RegisterConfigureAction(Cake.ServiceOrchestration.IServiceAction)
+- uid: Cake.ServiceOrchestration.IServiceManager.RegisterDeployAction(Cake.ServiceOrchestration.IServiceAction)
+  name: RegisterDeployAction(IServiceAction)
+  href: api/Cake.ServiceOrchestration.IServiceManager.html#Cake_ServiceOrchestration_IServiceManager_RegisterDeployAction_Cake_ServiceOrchestration_IServiceAction_
+  commentId: M:Cake.ServiceOrchestration.IServiceManager.RegisterDeployAction(Cake.ServiceOrchestration.IServiceAction)
+  fullName: Cake.ServiceOrchestration.IServiceManager.RegisterDeployAction(Cake.ServiceOrchestration.IServiceAction)
+- uid: Cake.ServiceOrchestration.IServiceManager.RegisterSetupAction(Cake.ServiceOrchestration.IServiceAction)
+  name: RegisterSetupAction(IServiceAction)
+  href: api/Cake.ServiceOrchestration.IServiceManager.html#Cake_ServiceOrchestration_IServiceManager_RegisterSetupAction_Cake_ServiceOrchestration_IServiceAction_
+  commentId: M:Cake.ServiceOrchestration.IServiceManager.RegisterSetupAction(Cake.ServiceOrchestration.IServiceAction)
+  fullName: Cake.ServiceOrchestration.IServiceManager.RegisterSetupAction(Cake.ServiceOrchestration.IServiceAction)
+- uid: Cake.ServiceOrchestration.ServiceDescriptor
+  name: ServiceDescriptor
+  href: api/Cake.ServiceOrchestration.ServiceDescriptor.html#Cake_ServiceOrchestration_ServiceDescriptor
+  commentId: T:Cake.ServiceOrchestration.ServiceDescriptor
+  fullName: Cake.ServiceOrchestration.ServiceDescriptor
+- uid: Cake.ServiceOrchestration.ServiceDescriptor.Name
+  name: Name
+  href: api/Cake.ServiceOrchestration.ServiceDescriptor.html#Cake_ServiceOrchestration_ServiceDescriptor_Name
+  commentId: P:Cake.ServiceOrchestration.ServiceDescriptor.Name
+  fullName: Cake.ServiceOrchestration.ServiceDescriptor.Name
+- uid: Cake.ServiceOrchestration.ServiceDescriptor.ProjectFile
+  name: ProjectFile
+  href: api/Cake.ServiceOrchestration.ServiceDescriptor.html#Cake_ServiceOrchestration_ServiceDescriptor_ProjectFile
+  commentId: P:Cake.ServiceOrchestration.ServiceDescriptor.ProjectFile
+  fullName: Cake.ServiceOrchestration.ServiceDescriptor.ProjectFile
+- uid: Cake.ServiceOrchestration.ServiceInstance
+  name: ServiceInstance
+  href: api/Cake.ServiceOrchestration.ServiceInstance.html#Cake_ServiceOrchestration_ServiceInstance
+  commentId: T:Cake.ServiceOrchestration.ServiceInstance
+  fullName: Cake.ServiceOrchestration.ServiceInstance
+- uid: Cake.ServiceOrchestration.ServiceInstance.Host
+  name: Host
+  href: api/Cake.ServiceOrchestration.ServiceInstance.html#Cake_ServiceOrchestration_ServiceInstance_Host
+  commentId: P:Cake.ServiceOrchestration.ServiceInstance.Host
+  fullName: Cake.ServiceOrchestration.ServiceInstance.Host
+- uid: Cake.ServiceOrchestration.ServiceInstance.InstanceUri
+  name: InstanceUri
+  href: api/Cake.ServiceOrchestration.ServiceInstance.html#Cake_ServiceOrchestration_ServiceInstance_InstanceUri
+  commentId: P:Cake.ServiceOrchestration.ServiceInstance.InstanceUri
+  fullName: Cake.ServiceOrchestration.ServiceInstance.InstanceUri
+- uid: Cake.ServiceOrchestration.ServiceInstance.LocalPath
+  name: LocalPath
+  href: api/Cake.ServiceOrchestration.ServiceInstance.html#Cake_ServiceOrchestration_ServiceInstance_LocalPath
+  commentId: P:Cake.ServiceOrchestration.ServiceInstance.LocalPath
+  fullName: Cake.ServiceOrchestration.ServiceInstance.LocalPath
+- uid: Cake.ServiceOrchestration.ServiceInstance.Port
+  name: Port
+  href: api/Cake.ServiceOrchestration.ServiceInstance.html#Cake_ServiceOrchestration_ServiceInstance_Port
+  commentId: P:Cake.ServiceOrchestration.ServiceInstance.Port
+  fullName: Cake.ServiceOrchestration.ServiceInstance.Port
+- uid: Cake.ServiceOrchestration.ServiceInstance.RemotePath
+  name: RemotePath
+  href: api/Cake.ServiceOrchestration.ServiceInstance.html#Cake_ServiceOrchestration_ServiceInstance_RemotePath
+  commentId: P:Cake.ServiceOrchestration.ServiceInstance.RemotePath
+  fullName: Cake.ServiceOrchestration.ServiceInstance.RemotePath
+- uid: Cake.ServiceOrchestration.ServiceInstance.Service
+  name: Service
+  href: api/Cake.ServiceOrchestration.ServiceInstance.html#Cake_ServiceOrchestration_ServiceInstance_Service
+  commentId: P:Cake.ServiceOrchestration.ServiceInstance.Service
+  fullName: Cake.ServiceOrchestration.ServiceInstance.Service
+- uid: Cake.ServiceOrchestration.ServiceManager
+  name: ServiceManager
+  href: api/Cake.ServiceOrchestration.ServiceManager.html#Cake_ServiceOrchestration_ServiceManager
+  commentId: T:Cake.ServiceOrchestration.ServiceManager
+  fullName: Cake.ServiceOrchestration.ServiceManager
+- uid: Cake.ServiceOrchestration.ServiceManager.Definition
+  name: Definition
+  href: api/Cake.ServiceOrchestration.ServiceManager.html#Cake_ServiceOrchestration_ServiceManager_Definition
+  commentId: P:Cake.ServiceOrchestration.ServiceManager.Definition
+  fullName: Cake.ServiceOrchestration.ServiceManager.Definition
+- uid: Cake.ServiceOrchestration.ServiceManager.DeployService
+  name: DeployService()
+  href: api/Cake.ServiceOrchestration.ServiceManager.html#Cake_ServiceOrchestration_ServiceManager_DeployService
+  commentId: M:Cake.ServiceOrchestration.ServiceManager.DeployService
+  fullName: Cake.ServiceOrchestration.ServiceManager.DeployService()
+- uid: Cake.ServiceOrchestration.ServiceManager.Instances
+  name: Instances
+  href: api/Cake.ServiceOrchestration.ServiceManager.html#Cake_ServiceOrchestration_ServiceManager_Instances
+  commentId: P:Cake.ServiceOrchestration.ServiceManager.Instances
+  fullName: Cake.ServiceOrchestration.ServiceManager.Instances
+- uid: Cake.ServiceOrchestration.ServiceManager.Item(System.Int32)
+  name: Item[Int32]
+  href: api/Cake.ServiceOrchestration.ServiceManager.html#Cake_ServiceOrchestration_ServiceManager_Item_System_Int32_
+  commentId: P:Cake.ServiceOrchestration.ServiceManager.Item(System.Int32)
+  name.vb: Item(Int32)
+  fullName: Cake.ServiceOrchestration.ServiceManager.Item[System.Int32]
+  fullName.vb: Cake.ServiceOrchestration.ServiceManager.Item(System.Int32)
+- uid: Cake.ServiceOrchestration.ServiceManager.Item(System.String)
+  name: Item[String]
+  href: api/Cake.ServiceOrchestration.ServiceManager.html#Cake_ServiceOrchestration_ServiceManager_Item_System_String_
+  commentId: P:Cake.ServiceOrchestration.ServiceManager.Item(System.String)
+  name.vb: Item(String)
+  fullName: Cake.ServiceOrchestration.ServiceManager.Item[System.String]
+  fullName.vb: Cake.ServiceOrchestration.ServiceManager.Item(System.String)
+- uid: Cake.ServiceOrchestration.ServiceManager.RegisterConfigureAction(Cake.ServiceOrchestration.IServiceAction)
+  name: RegisterConfigureAction(IServiceAction)
+  href: api/Cake.ServiceOrchestration.ServiceManager.html#Cake_ServiceOrchestration_ServiceManager_RegisterConfigureAction_Cake_ServiceOrchestration_IServiceAction_
+  commentId: M:Cake.ServiceOrchestration.ServiceManager.RegisterConfigureAction(Cake.ServiceOrchestration.IServiceAction)
+  fullName: Cake.ServiceOrchestration.ServiceManager.RegisterConfigureAction(Cake.ServiceOrchestration.IServiceAction)
+- uid: Cake.ServiceOrchestration.ServiceManager.RegisterDeployAction(Cake.ServiceOrchestration.IServiceAction)
+  name: RegisterDeployAction(IServiceAction)
+  href: api/Cake.ServiceOrchestration.ServiceManager.html#Cake_ServiceOrchestration_ServiceManager_RegisterDeployAction_Cake_ServiceOrchestration_IServiceAction_
+  commentId: M:Cake.ServiceOrchestration.ServiceManager.RegisterDeployAction(Cake.ServiceOrchestration.IServiceAction)
+  fullName: Cake.ServiceOrchestration.ServiceManager.RegisterDeployAction(Cake.ServiceOrchestration.IServiceAction)
+- uid: Cake.ServiceOrchestration.ServiceManager.RegisterSetupAction(Cake.ServiceOrchestration.IServiceAction)
+  name: RegisterSetupAction(IServiceAction)
+  href: api/Cake.ServiceOrchestration.ServiceManager.html#Cake_ServiceOrchestration_ServiceManager_RegisterSetupAction_Cake_ServiceOrchestration_IServiceAction_
+  commentId: M:Cake.ServiceOrchestration.ServiceManager.RegisterSetupAction(Cake.ServiceOrchestration.IServiceAction)
+  fullName: Cake.ServiceOrchestration.ServiceManager.RegisterSetupAction(Cake.ServiceOrchestration.IServiceAction)
+- uid: Cake.ServiceOrchestration.ServiceManagerExtensions
+  name: ServiceManagerExtensions
+  href: api/Cake.ServiceOrchestration.ServiceManagerExtensions.html#Cake_ServiceOrchestration_ServiceManagerExtensions
+  commentId: T:Cake.ServiceOrchestration.ServiceManagerExtensions
+  fullName: Cake.ServiceOrchestration.ServiceManagerExtensions
+- uid: Cake.ServiceOrchestration.ServiceManagerExtensions.CreateInstanceFor(Cake.ServiceOrchestration.IServiceManager,System.String,DirectoryPath,DirectoryPath)
+  name: CreateInstanceFor(IServiceManager, String, DirectoryPath, DirectoryPath)
+  href: api/Cake.ServiceOrchestration.ServiceManagerExtensions.html#Cake_ServiceOrchestration_ServiceManagerExtensions_CreateInstanceFor_Cake_ServiceOrchestration_IServiceManager_System_String_DirectoryPath_DirectoryPath_
+  commentId: M:Cake.ServiceOrchestration.ServiceManagerExtensions.CreateInstanceFor(Cake.ServiceOrchestration.IServiceManager,System.String,DirectoryPath,DirectoryPath)
+  fullName: Cake.ServiceOrchestration.ServiceManagerExtensions.CreateInstanceFor(Cake.ServiceOrchestration.IServiceManager, System.String, DirectoryPath, DirectoryPath)
+- uid: Cake.ServiceOrchestration.ServiceManagerExtensions.CreateInstanceFor(Cake.ServiceOrchestration.IServiceManager,Uri,DirectoryPath,DirectoryPath)
+  name: CreateInstanceFor(IServiceManager, Uri, DirectoryPath, DirectoryPath)
+  href: api/Cake.ServiceOrchestration.ServiceManagerExtensions.html#Cake_ServiceOrchestration_ServiceManagerExtensions_CreateInstanceFor_Cake_ServiceOrchestration_IServiceManager_Uri_DirectoryPath_DirectoryPath_
+  commentId: M:Cake.ServiceOrchestration.ServiceManagerExtensions.CreateInstanceFor(Cake.ServiceOrchestration.IServiceManager,Uri,DirectoryPath,DirectoryPath)
+  fullName: Cake.ServiceOrchestration.ServiceManagerExtensions.CreateInstanceFor(Cake.ServiceOrchestration.IServiceManager, Uri, DirectoryPath, DirectoryPath)
+- uid: Cake.ServiceOrchestration.ServiceManagerExtensions.RegisterConfigureAction(Cake.ServiceOrchestration.IServiceManager,System.Action{ICakeContext,Cake.ServiceOrchestration.IServiceInstance})
+  name: RegisterConfigureAction(IServiceManager, Action<ICakeContext, IServiceInstance>)
+  href: api/Cake.ServiceOrchestration.ServiceManagerExtensions.html#Cake_ServiceOrchestration_ServiceManagerExtensions_RegisterConfigureAction_Cake_ServiceOrchestration_IServiceManager_System_Action_ICakeContext_Cake_ServiceOrchestration_IServiceInstance__
+  commentId: M:Cake.ServiceOrchestration.ServiceManagerExtensions.RegisterConfigureAction(Cake.ServiceOrchestration.IServiceManager,System.Action{ICakeContext,Cake.ServiceOrchestration.IServiceInstance})
+  name.vb: RegisterConfigureAction(IServiceManager, Action(Of ICakeContext, IServiceInstance))
+  fullName: Cake.ServiceOrchestration.ServiceManagerExtensions.RegisterConfigureAction(Cake.ServiceOrchestration.IServiceManager, System.Action<ICakeContext, Cake.ServiceOrchestration.IServiceInstance>)
+  fullName.vb: Cake.ServiceOrchestration.ServiceManagerExtensions.RegisterConfigureAction(Cake.ServiceOrchestration.IServiceManager, System.Action(Of ICakeContext, Cake.ServiceOrchestration.IServiceInstance))
+- uid: Cake.ServiceOrchestration.ServiceManagerExtensions.RegisterConfigureAction``1(Cake.ServiceOrchestration.IServiceManager)
+  name: RegisterConfigureAction<T>(IServiceManager)
+  href: api/Cake.ServiceOrchestration.ServiceManagerExtensions.html#Cake_ServiceOrchestration_ServiceManagerExtensions_RegisterConfigureAction__1_Cake_ServiceOrchestration_IServiceManager_
+  commentId: M:Cake.ServiceOrchestration.ServiceManagerExtensions.RegisterConfigureAction``1(Cake.ServiceOrchestration.IServiceManager)
+  name.vb: RegisterConfigureAction(Of T)(IServiceManager)
+  fullName: Cake.ServiceOrchestration.ServiceManagerExtensions.RegisterConfigureAction<T>(Cake.ServiceOrchestration.IServiceManager)
+  fullName.vb: Cake.ServiceOrchestration.ServiceManagerExtensions.RegisterConfigureAction(Of T)(Cake.ServiceOrchestration.IServiceManager)
+- uid: Cake.ServiceOrchestration.ServiceManagerExtensions.RegisterDeployAction(Cake.ServiceOrchestration.IServiceManager,System.Action{ICakeContext,Cake.ServiceOrchestration.IServiceInstance})
+  name: RegisterDeployAction(IServiceManager, Action<ICakeContext, IServiceInstance>)
+  href: api/Cake.ServiceOrchestration.ServiceManagerExtensions.html#Cake_ServiceOrchestration_ServiceManagerExtensions_RegisterDeployAction_Cake_ServiceOrchestration_IServiceManager_System_Action_ICakeContext_Cake_ServiceOrchestration_IServiceInstance__
+  commentId: M:Cake.ServiceOrchestration.ServiceManagerExtensions.RegisterDeployAction(Cake.ServiceOrchestration.IServiceManager,System.Action{ICakeContext,Cake.ServiceOrchestration.IServiceInstance})
+  name.vb: RegisterDeployAction(IServiceManager, Action(Of ICakeContext, IServiceInstance))
+  fullName: Cake.ServiceOrchestration.ServiceManagerExtensions.RegisterDeployAction(Cake.ServiceOrchestration.IServiceManager, System.Action<ICakeContext, Cake.ServiceOrchestration.IServiceInstance>)
+  fullName.vb: Cake.ServiceOrchestration.ServiceManagerExtensions.RegisterDeployAction(Cake.ServiceOrchestration.IServiceManager, System.Action(Of ICakeContext, Cake.ServiceOrchestration.IServiceInstance))
+- uid: Cake.ServiceOrchestration.ServiceManagerExtensions.RegisterDeployAction``1(Cake.ServiceOrchestration.IServiceManager)
+  name: RegisterDeployAction<T>(IServiceManager)
+  href: api/Cake.ServiceOrchestration.ServiceManagerExtensions.html#Cake_ServiceOrchestration_ServiceManagerExtensions_RegisterDeployAction__1_Cake_ServiceOrchestration_IServiceManager_
+  commentId: M:Cake.ServiceOrchestration.ServiceManagerExtensions.RegisterDeployAction``1(Cake.ServiceOrchestration.IServiceManager)
+  name.vb: RegisterDeployAction(Of T)(IServiceManager)
+  fullName: Cake.ServiceOrchestration.ServiceManagerExtensions.RegisterDeployAction<T>(Cake.ServiceOrchestration.IServiceManager)
+  fullName.vb: Cake.ServiceOrchestration.ServiceManagerExtensions.RegisterDeployAction(Of T)(Cake.ServiceOrchestration.IServiceManager)
+- uid: Cake.ServiceOrchestration.ServiceManagerExtensions.RegisterSetupAction(Cake.ServiceOrchestration.IServiceManager,System.Action{ICakeContext,Cake.ServiceOrchestration.IServiceInstance})
+  name: RegisterSetupAction(IServiceManager, Action<ICakeContext, IServiceInstance>)
+  href: api/Cake.ServiceOrchestration.ServiceManagerExtensions.html#Cake_ServiceOrchestration_ServiceManagerExtensions_RegisterSetupAction_Cake_ServiceOrchestration_IServiceManager_System_Action_ICakeContext_Cake_ServiceOrchestration_IServiceInstance__
+  commentId: M:Cake.ServiceOrchestration.ServiceManagerExtensions.RegisterSetupAction(Cake.ServiceOrchestration.IServiceManager,System.Action{ICakeContext,Cake.ServiceOrchestration.IServiceInstance})
+  name.vb: RegisterSetupAction(IServiceManager, Action(Of ICakeContext, IServiceInstance))
+  fullName: Cake.ServiceOrchestration.ServiceManagerExtensions.RegisterSetupAction(Cake.ServiceOrchestration.IServiceManager, System.Action<ICakeContext, Cake.ServiceOrchestration.IServiceInstance>)
+  fullName.vb: Cake.ServiceOrchestration.ServiceManagerExtensions.RegisterSetupAction(Cake.ServiceOrchestration.IServiceManager, System.Action(Of ICakeContext, Cake.ServiceOrchestration.IServiceInstance))
+- uid: Cake.ServiceOrchestration.ServiceManagerExtensions.RegisterSetupAction``1(Cake.ServiceOrchestration.IServiceManager)
+  name: RegisterSetupAction<T>(IServiceManager)
+  href: api/Cake.ServiceOrchestration.ServiceManagerExtensions.html#Cake_ServiceOrchestration_ServiceManagerExtensions_RegisterSetupAction__1_Cake_ServiceOrchestration_IServiceManager_
+  commentId: M:Cake.ServiceOrchestration.ServiceManagerExtensions.RegisterSetupAction``1(Cake.ServiceOrchestration.IServiceManager)
+  name.vb: RegisterSetupAction(Of T)(IServiceManager)
+  fullName: Cake.ServiceOrchestration.ServiceManagerExtensions.RegisterSetupAction<T>(Cake.ServiceOrchestration.IServiceManager)
+  fullName.vb: Cake.ServiceOrchestration.ServiceManagerExtensions.RegisterSetupAction(Of T)(Cake.ServiceOrchestration.IServiceManager)
+- uid: Cake.ServiceOrchestration.ServiceOrchestrationAliases
+  name: ServiceOrchestrationAliases
+  href: api/Cake.ServiceOrchestration.ServiceOrchestrationAliases.html#Cake_ServiceOrchestration_ServiceOrchestrationAliases
+  commentId: T:Cake.ServiceOrchestration.ServiceOrchestrationAliases
+  fullName: Cake.ServiceOrchestration.ServiceOrchestrationAliases
+- uid: Cake.ServiceOrchestration.ServiceOrchestrationAliases.DefineService(ICakeContext,FilePath,System.String)
+  name: DefineService(ICakeContext, FilePath, String)
+  href: api/Cake.ServiceOrchestration.ServiceOrchestrationAliases.html#Cake_ServiceOrchestration_ServiceOrchestrationAliases_DefineService_ICakeContext_FilePath_System_String_
+  commentId: M:Cake.ServiceOrchestration.ServiceOrchestrationAliases.DefineService(ICakeContext,FilePath,System.String)
+  fullName: Cake.ServiceOrchestration.ServiceOrchestrationAliases.DefineService(ICakeContext, FilePath, System.String)
