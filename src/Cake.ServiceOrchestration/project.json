@@ -7,13 +7,13 @@
 	},
 	"frameworks": {
 		"netstandard1.6": {
-					"imports": "dnxcore50",
-					"dependencies": {
-						"System.Linq": "4.1.0"
-					}
+			"imports": "dnxcore50",
+			"dependencies": {
+				"System.Linq": "4.1.0"
+			}
 		},
 		"net451": {
-				
+		
 		}
 	},
 	"buildOptions": {

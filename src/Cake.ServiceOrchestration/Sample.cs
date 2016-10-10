@@ -3,7 +3,7 @@ using Cake.Common.Xml;
 using Cake.Core;
 using Cake.ServiceOrchestration;
 
-public class Sample
+internal class Sample
 {
     private ICakeContext _context { get; }
 
