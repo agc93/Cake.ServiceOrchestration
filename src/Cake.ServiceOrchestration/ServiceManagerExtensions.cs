@@ -98,7 +98,7 @@ namespace Cake.ServiceOrchestration
         /// <param name="sharePath">Remotely accessible path for the new instance.</param>
         /// <param name="localPath">Local install path for the new instance.</param>
         /// <returns>The current service manager.</returns>
-        public static IServiceManager CreateInstanceFor(this IServiceManager manager, Uri uri, DirectoryPath sharePath,
+        public static IServiceManager CreateInstanceFor(this IServiceManager manager, Uri uri, string sharePath,
             DirectoryPath localPath)
         {
             manager.Instances.Add(new ServiceInstance(manager.Definition)
@@ -119,7 +119,7 @@ namespace Cake.ServiceOrchestration
         /// <param name="localPath">Local install path for the new instance.</param>
         /// <returns>The current service manager.</returns>
         public static IServiceManager CreateInstanceFor(this IServiceManager manager, string uri,
-            DirectoryPath sharePath, DirectoryPath localPath)
+            string sharePath, DirectoryPath localPath)
         {
             var u = new Uri(uri.StartsWith("http://") ? uri : "http://" + uri);
             return manager.CreateInstanceFor(u, sharePath, localPath);
