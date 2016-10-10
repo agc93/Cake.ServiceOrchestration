@@ -4,3 +4,5 @@
   href: getting-started.md
 - name: Background/Design
   href: background.md
+- name: Error Handling
+  href: error-handling.md
