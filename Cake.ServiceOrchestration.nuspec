@@ -14,8 +14,4 @@
 		<dependencies>
 	    </dependencies>
 	</metadata>
-	<files>
-		<file src="dist\lib\Cake.ServiceOrchestration.dll" target="lib\netstandard1.6" />
-		<file src="dist\lib\Cake.ServiceOrchestration.xml" target="lib\netstandard1.6" />
-	</files>
 </package>

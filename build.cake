@@ -3,13 +3,15 @@
 #addin "Cake.DocFx"
 #tool "docfx.msbuild"
 
+#load "helpers.cake"
+
 ///////////////////////////////////////////////////////////////////////////////
 // ARGUMENTS
 ///////////////////////////////////////////////////////////////////////////////
 
 var target = Argument<string>("target", "Default");
 var configuration = Argument<string>("configuration", "Release");
-var framework = Argument<string>("framework", "netstandard1.6");
+var framework = Argument<string>("framework", "netstandard1.6,net451");
 
 ///////////////////////////////////////////////////////////////////////////////
 // GLOBAL VARIABLES
@@ -19,8 +21,9 @@ var solutionPath = File("./src/Cake.ServiceOrchestration.sln");
 var solution = ParseSolution(solutionPath);
 var projects = solution.Projects;
 var projectPaths = projects.Select(p => p.Path.GetDirectory());
+var frameworks = GetFrameworks(framework);
 var testAssemblies = projects.Where(p => p.Name.Contains(".Tests")).Select(p => p.Path.GetDirectory() + "/bin/" + configuration + "/" + p.Name + ".dll");
-var artifacts = "./dist/";
+var artifacts = "dist/";
 var testResultsPath = MakeAbsolute(Directory(artifacts + "./test-results"));
 GitVersion versionInfo = null;
 
@@ -34,6 +37,7 @@ Setup(ctx =>
 	Information("Running tasks...");
 	versionInfo = GitVersion();
 	Information("Building for version {0}", versionInfo.FullSemVer);
+    Information("Building against '{0}'", framework);
 });
 
 Teardown(ctx =>
@@ -76,11 +80,15 @@ Task("Build")
 {
 	Information("Building solution...");
 	CreateDirectory(artifacts + "lib/");
-	DotNetCoreBuild("./src/Cake.ServiceOrchestration/", new DotNetCoreBuildSettings {
-		Framework = framework,
-		Configuration = configuration,
-		OutputDirectory = artifacts + "lib/"
-	});
+    foreach(var f in frameworks) {
+        CreateDirectory(artifacts + "lib/" + f);
+        DotNetCoreBuild("./src/Cake.ServiceOrchestration/", new DotNetCoreBuildSettings {
+            Framework = f,
+            Configuration = configuration,
+            OutputDirectory = artifacts + "lib/" + f
+	    });
+    }
+	
 });
 
 Task("Generate-Docs").Does(() => {
@@ -129,10 +137,13 @@ Task("NuGet")
 		Information("Building NuGet package");
 		var nuspecFiles = GetFiles("./*.nuspec");
 		var versionNotes = ParseAllReleaseNotes("./ReleaseNotes.md").FirstOrDefault(v => v.Version.ToString() == versionInfo.MajorMinorPatch);
+        var content = GetContent(frameworks, artifacts + "lib/");
+        Information(string.Join(Environment.NewLine, content.Select(c => c.Source)));
 		NuGetPack(nuspecFiles, new NuGetPackSettings() {
 			Version = versionInfo.NuGetVersionV2,
 			ReleaseNotes = versionNotes != null ? versionNotes.Notes.ToList() : new List<string>(),
-			OutputDirectory = artifacts + "/package"
+			OutputDirectory = artifacts + "/package",
+            Files = content
 		});
 	});
 
