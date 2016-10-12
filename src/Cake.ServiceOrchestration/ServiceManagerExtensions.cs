@@ -157,5 +157,27 @@ namespace Cake.ServiceOrchestration
             var u = new Uri(uri.StartsWith("http://") ? uri : "http://" + uri);
             return manager.CreateInstanceFor(u, sharePath, localPath, tags);
         }
+
+        /// <summary>
+        ///     Deploys all instances of the current service that match the given predicate.
+        /// </summary>
+        /// <param name="manager">The current service manager.</param>
+        /// <param name="predicate">A predicate for which instances should be deployed.</param>
+        public static void DeployService(this IServiceManager manager, Func<IServiceInstance, bool> predicate)
+        {
+            var filter = new ServiceFilter(predicate);
+            manager.DeployService(filter);
+        }
+
+        /// <summary>
+        ///     Deploys all instances of the current service using the specified filter.
+        /// </summary>
+        /// <typeparam name="T">An <see cref="IServiceFilter" /> filter implementation to filter the instances by.</typeparam>
+        /// <param name="manager">The current service manager.</param>
+        public static void DeployService<T>(this IServiceManager manager) where T : IServiceFilter, new()
+        {
+            var filter = new T();
+            manager.DeployService(filter);
+        }
     }
 }

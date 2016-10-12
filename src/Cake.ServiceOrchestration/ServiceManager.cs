@@ -85,7 +85,14 @@ namespace Cake.ServiceOrchestration
         /// <remarks>Sequentially executes the registered setup, deployment and configuration actions for each instance.</remarks>
         public void DeployService()
         {
-            DeployService(i => true);
+            DeployService(new NoFilter());
+        }
+
+        private class NoFilter : IServiceFilter {
+            public IEnumerable<IServiceInstance> GetInstances(IEnumerable<IServiceInstance> instances)
+        {
+            return instances;
+        }
         }
 
         /// <summary>
@@ -96,11 +103,11 @@ namespace Cake.ServiceOrchestration
         ///     Sequentially executes the registered setup, deployment and configuration actions for each instance that
         ///     matches the given predicate.
         /// </remarks>
-        public void DeployService(Func<IServiceInstance, bool> predicate)
+        public void DeployService(IServiceFilter filter)
         {
             try
             {
-                foreach (var instance in Instances.Where(predicate))
+                foreach (var instance in filter.GetInstances(Instances))
                 {
                     RunActions(SetupActions, DeployPhase.Setup, instance);
                     RunActions(DeployActions, DeployPhase.Deploy, instance);

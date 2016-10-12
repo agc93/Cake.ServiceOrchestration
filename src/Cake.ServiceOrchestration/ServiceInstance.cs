@@ -49,6 +49,6 @@ namespace Cake.ServiceOrchestration
         ///     Gets any tags associated with this instance.
         /// </summary>
         /// <remarks>Tags are optional and may not be populated on all instances.</remarks>
-        public IEnumerable<string> Tags { get; set; } = new List<string>();
+        public IEnumerable<string> Tags { get; internal set; } = new List<string>();
     }
 }
