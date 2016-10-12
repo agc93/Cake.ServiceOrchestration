@@ -1,4 +1,5 @@
-﻿using Cake.Common.IO;
+﻿using System.Linq;
+using Cake.Common.IO;
 using Cake.Common.Xml;
 using Cake.Core;
 using Cake.ServiceOrchestration;
@@ -23,6 +24,6 @@ internal class Sample
             });
         service.CreateInstanceFor("http://hostname:80/path", @"\\server\application", @"E:\Services\App")
             .CreateInstanceFor("http://backup:81/path", @"\\backupserver\application", @"D:\Services\App");
-        service.DeployService();
+        service.DeployService(i => i.Tags.Any());
     }
 }

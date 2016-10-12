@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 
 namespace Cake.ServiceOrchestration
@@ -50,5 +51,11 @@ namespace Cake.ServiceOrchestration
         /// </summary>
         /// <remarks>Implementations may use varying logic for this process</remarks>
         void DeployService();
+
+        /// <summary>
+        ///     Deploys all instances of the current service that match the given filter.
+        /// </summary>
+        /// <remarks>Implementations may use varying logic for this process</remarks>
+        void DeployService(IServiceFilter filter);
     }
 }

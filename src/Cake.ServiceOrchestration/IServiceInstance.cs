@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using Cake.Core.IO;
 
 namespace Cake.ServiceOrchestration
@@ -29,5 +30,11 @@ namespace Cake.ServiceOrchestration
         /// </summary>
         /// <remarks>May be null or empty if not locally installed.</remarks>
         DirectoryPath LocalPath { get; }
+
+        /// <summary>
+        ///     Gets any tags associated with this instance.
+        /// </summary>
+        /// <remarks>Tags are optional and may not be populated on all instances.</remarks>
+        IEnumerable<string> Tags { get; }
     }
 }
