@@ -7,3 +7,4 @@ A prototype framework and Cake addin designed to demonstrate orchestrating multi
 Click the tabs at the top of the page to navigate:
 - **Documentation**: General documentation
 - **Reference**: Full API documentation
+- **Samples**: Short, simple samples of common solutions
