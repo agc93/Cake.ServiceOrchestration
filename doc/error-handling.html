@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title> </title>
+    <title>Error Handling during deployments </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content=" ">
+    <meta name="title" content="Error Handling during deployments ">
     <meta name="generator" content="docfx 2.4.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -64,8 +64,17 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
+              <h1 id="error-handling-during-deployments">Error Handling during deployments</h1>
               
-              
+<p>The error handling during the execution of a deployment pipeline is controlled by the <code>IServiceManager</code> being used, since it is part of the execution process.</p>
+<p>The default <code>ServiceManager</code> (the type returned by the <code>DefineService</code> alias) has a simple, but fragile approach to error handling. If <em>any</em> action during <em>any</em> phase of the pipeline throws <em>any</em> unhandled exception, the pipeline will stop immediately and the manager will throw an <code>ActionInvocationException</code>.</p>
+<blockquote><p>If you are debugging your script, the exception itself may include more information such as which action failed or what exception was thrown.</p>
+</blockquote>
+<p>This design is intended to prevent broken deployments causing more damage than necessary, so it is recommended to place your &quot;brittle&quot; actions as early in the pipeline as possible, and your &quot;dangerous&quot; actions as late as possible. This way, a failure in a brittle component will stop the execution before your dangerous action is run, potentially damaging your environment.</p>
+<p>As with all parts of this framework, providing your own <code>IServiceManager</code> implementation will allow you complete control over the execution phase of the pipeline, including how you handle exceptions from individual actions.</p>
+<h2 id="errors-in-actions">Errors in actions</h2>
+<p>Note that this means your exceptions should <strong>always</strong> throw an exception if there is an error or problem! Never rely on warnings or on generic <code>catch</code>-all clauses to suppress errors as the next action to run may be dangerous to a deployment environment!</p>
+
             </article>
           </div>
           
@@ -74,7 +83,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/agc93/Cake.ServiceOrchestration/blob/develop/docfx/api/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/agc93/Cake.ServiceOrchestration/blob/develop/docfx/doc/error-handling.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

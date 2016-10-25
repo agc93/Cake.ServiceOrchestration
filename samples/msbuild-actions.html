@@ -65,7 +65,38 @@
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
               
-              
+              <p>Below are some sample <code>IServiceAction</code> implementations using the built-in MSBuild aliases. You can put these in your script directly or include as a compiled reference.</p>
+<p>The first example will invoke MSBuild to publish to the <code>RemotePath</code> of your instance. This is roughly equivalent of Visual Studio&#39;s Publish command when using the File System Publish steps.</p>
+<pre><code class="lang-csharp">public class PublishApi : IServiceAction
+{
+    public void Run(ICakeContext ctx, IServiceInstance i)
+    {
+        ctx.Information(&quot;Publishing {0} to {1}...&quot;, i.Service.ProjectFile.GetFilenameWithoutExtension(),
+            i.RemotePath);
+        ctx.MSBuild(i.Service.ProjectFile, s =&gt; 
+           s.WithTarget(&quot;WebPublish&quot;)
+            .SetConfiguration(&quot;Debug&quot;)
+            .SetVerbosity(Verbosity.Quiet)
+            .WithProperty(&quot;WebPublishMethod&quot;, &quot;FileSystem&quot;)
+            .WithProperty(&quot;PublishUrl&quot;, i.RemotePath));
+    }
+}
+
+public class CopyAppData : IServiceAction
+{
+    public void Run(ICakeContext ctx, IServiceInstance i)
+    {
+        ctx.EnsureDirectoryExists(i.RemotePath.Combine(&quot;App_Data/&quot;));
+        ctx.CopyFiles(&quot;./&quot; + i.Service.ProjectFile.GetDirectory() + &quot;/App_Data/*.*&quot;,
+            i.RemotePath.Combine(&quot;App_Data/&quot;));
+    }
+}
+</code></pre><p>This example uses the below extension method:</p>
+<pre><code class="lang-csharp">public static string Combine(this string s, string t)
+{
+    return System.IO.Path.Combine(s, t);
+}
+</code></pre>
             </article>
           </div>
           
@@ -74,7 +105,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/agc93/Cake.ServiceOrchestration/blob/develop/docfx/api/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/agc93/Cake.ServiceOrchestration/blob/develop/docfx/samples/msbuild-actions.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

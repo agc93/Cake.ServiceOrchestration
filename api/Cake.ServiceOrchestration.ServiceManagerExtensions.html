@@ -112,7 +112,7 @@
               </h3>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/agc93/Cake.ServiceOrchestration/new/master/docfx/apispec/new?filename=Cake_ServiceOrchestration_ServiceManagerExtensions_CreateInstanceFor_Cake_ServiceOrchestration_IServiceManager_System_String_System_String_DirectoryPath_.md&amp;value=---%0Auid%3A%20Cake.ServiceOrchestration.ServiceManagerExtensions.CreateInstanceFor(Cake.ServiceOrchestration.IServiceManager%2CSystem.String%2CSystem.String%2CDirectoryPath)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+                <a href="https://github.com/agc93/Cake.ServiceOrchestration/new/develop/docfx/apispec/new?filename=Cake_ServiceOrchestration_ServiceManagerExtensions_CreateInstanceFor_Cake_ServiceOrchestration_IServiceManager_System_String_System_String_DirectoryPath_.md&amp;value=---%0Auid%3A%20Cake.ServiceOrchestration.ServiceManagerExtensions.CreateInstanceFor(Cake.ServiceOrchestration.IServiceManager%2CSystem.String%2CSystem.String%2CDirectoryPath)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               
               <h4 id="Cake_ServiceOrchestration_ServiceManagerExtensions_CreateInstanceFor_Cake_ServiceOrchestration_IServiceManager_System_String_System_String_DirectoryPath_" data-uid="Cake.ServiceOrchestration.ServiceManagerExtensions.CreateInstanceFor(Cake.ServiceOrchestration.IServiceManager,System.String,System.String,DirectoryPath)">CreateInstanceFor(IServiceManager, String, String, DirectoryPath)</h4>
@@ -177,7 +177,78 @@
               </table>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/agc93/Cake.ServiceOrchestration/new/master/docfx/apispec/new?filename=Cake_ServiceOrchestration_ServiceManagerExtensions_CreateInstanceFor_Cake_ServiceOrchestration_IServiceManager_Uri_System_String_DirectoryPath_.md&amp;value=---%0Auid%3A%20Cake.ServiceOrchestration.ServiceManagerExtensions.CreateInstanceFor(Cake.ServiceOrchestration.IServiceManager%2CUri%2CSystem.String%2CDirectoryPath)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+                <a href="https://github.com/agc93/Cake.ServiceOrchestration/new/develop/docfx/apispec/new?filename=Cake_ServiceOrchestration_ServiceManagerExtensions_CreateInstanceFor_Cake_ServiceOrchestration_IServiceManager_System_String_System_String_DirectoryPath_IEnumerable_System_String__.md&amp;value=---%0Auid%3A%20Cake.ServiceOrchestration.ServiceManagerExtensions.CreateInstanceFor(Cake.ServiceOrchestration.IServiceManager%2CSystem.String%2CSystem.String%2CDirectoryPath%2CIEnumerable%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="Cake_ServiceOrchestration_ServiceManagerExtensions_CreateInstanceFor_Cake_ServiceOrchestration_IServiceManager_System_String_System_String_DirectoryPath_IEnumerable_System_String__" data-uid="Cake.ServiceOrchestration.ServiceManagerExtensions.CreateInstanceFor(Cake.ServiceOrchestration.IServiceManager,System.String,System.String,DirectoryPath,IEnumerable{System.String})">CreateInstanceFor(IServiceManager, String, String, DirectoryPath, IEnumerable&lt;String&gt;)</h4>
+              <div class="markdown level1 summary"><pre><code>Creates a new instance of the current service using the given URI, remote path and local path.
+</code></pre></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static IServiceManager CreateInstanceFor(this IServiceManager manager, string uri, string sharePath, DirectoryPath localPath, IEnumerable&lt;string&gt; tags)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Cake.ServiceOrchestration.IServiceManager.html#Cake_ServiceOrchestration_IServiceManager">IServiceManager</a></td>
+                    <td><em>manager</em></td>
+                    <td><p>The current service manager.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>uri</em></td>
+                    <td><p>URI of the new instance (will be parsed to a <see cref="!:System.Uri"></see>).</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>sharePath</em></td>
+                    <td><p>Remotely accessible path for the new instance.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">DirectoryPath</span></td>
+                    <td><em>localPath</em></td>
+                    <td><p>Local install path for the new instance.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+                    <td><em>tags</em></td>
+                    <td><p>Tags for the new instance</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Cake.ServiceOrchestration.IServiceManager.html#Cake_ServiceOrchestration_IServiceManager">IServiceManager</a></td>
+                    <td><p>The current service manager.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/agc93/Cake.ServiceOrchestration/new/develop/docfx/apispec/new?filename=Cake_ServiceOrchestration_ServiceManagerExtensions_CreateInstanceFor_Cake_ServiceOrchestration_IServiceManager_Uri_System_String_DirectoryPath_.md&amp;value=---%0Auid%3A%20Cake.ServiceOrchestration.ServiceManagerExtensions.CreateInstanceFor(Cake.ServiceOrchestration.IServiceManager%2CUri%2CSystem.String%2CDirectoryPath)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               
               <h4 id="Cake_ServiceOrchestration_ServiceManagerExtensions_CreateInstanceFor_Cake_ServiceOrchestration_IServiceManager_Uri_System_String_DirectoryPath_" data-uid="Cake.ServiceOrchestration.ServiceManagerExtensions.CreateInstanceFor(Cake.ServiceOrchestration.IServiceManager,Uri,System.String,DirectoryPath)">CreateInstanceFor(IServiceManager, Uri, String, DirectoryPath)</h4>
@@ -242,7 +313,161 @@
               </table>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/agc93/Cake.ServiceOrchestration/new/master/docfx/apispec/new?filename=Cake_ServiceOrchestration_ServiceManagerExtensions_RegisterConfigureAction_Cake_ServiceOrchestration_IServiceManager_System_Action_ICakeContext_Cake_ServiceOrchestration_IServiceInstance__.md&amp;value=---%0Auid%3A%20Cake.ServiceOrchestration.ServiceManagerExtensions.RegisterConfigureAction(Cake.ServiceOrchestration.IServiceManager%2CSystem.Action%7BICakeContext%2CCake.ServiceOrchestration.IServiceInstance%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+                <a href="https://github.com/agc93/Cake.ServiceOrchestration/new/develop/docfx/apispec/new?filename=Cake_ServiceOrchestration_ServiceManagerExtensions_CreateInstanceFor_Cake_ServiceOrchestration_IServiceManager_Uri_System_String_DirectoryPath_IEnumerable_System_String__.md&amp;value=---%0Auid%3A%20Cake.ServiceOrchestration.ServiceManagerExtensions.CreateInstanceFor(Cake.ServiceOrchestration.IServiceManager%2CUri%2CSystem.String%2CDirectoryPath%2CIEnumerable%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="Cake_ServiceOrchestration_ServiceManagerExtensions_CreateInstanceFor_Cake_ServiceOrchestration_IServiceManager_Uri_System_String_DirectoryPath_IEnumerable_System_String__" data-uid="Cake.ServiceOrchestration.ServiceManagerExtensions.CreateInstanceFor(Cake.ServiceOrchestration.IServiceManager,Uri,System.String,DirectoryPath,IEnumerable{System.String})">CreateInstanceFor(IServiceManager, Uri, String, DirectoryPath, IEnumerable&lt;String&gt;)</h4>
+              <div class="markdown level1 summary"><pre><code>Creates a new instance of the current service using the given URI, remote path and local path.
+</code></pre></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static IServiceManager CreateInstanceFor(this IServiceManager manager, Uri uri, string sharePath, DirectoryPath localPath, IEnumerable&lt;string&gt; tags)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Cake.ServiceOrchestration.IServiceManager.html#Cake_ServiceOrchestration_IServiceManager">IServiceManager</a></td>
+                    <td><em>manager</em></td>
+                    <td><p>The current service manager.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Uri</span></td>
+                    <td><em>uri</em></td>
+                    <td><p>URI of the new instance.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>sharePath</em></td>
+                    <td><p>Remotely accessible path for the new instance.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">DirectoryPath</span></td>
+                    <td><em>localPath</em></td>
+                    <td><p>Local install path for the new instance.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+                    <td><em>tags</em></td>
+                    <td><p>Tags for the new instance</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Cake.ServiceOrchestration.IServiceManager.html#Cake_ServiceOrchestration_IServiceManager">IServiceManager</a></td>
+                    <td><p>The current service manager.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/agc93/Cake.ServiceOrchestration/new/develop/docfx/apispec/new?filename=Cake_ServiceOrchestration_ServiceManagerExtensions_DeployService_Cake_ServiceOrchestration_IServiceManager_System_Func_Cake_ServiceOrchestration_IServiceInstance_System_Boolean__.md&amp;value=---%0Auid%3A%20Cake.ServiceOrchestration.ServiceManagerExtensions.DeployService(Cake.ServiceOrchestration.IServiceManager%2CSystem.Func%7BCake.ServiceOrchestration.IServiceInstance%2CSystem.Boolean%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="Cake_ServiceOrchestration_ServiceManagerExtensions_DeployService_Cake_ServiceOrchestration_IServiceManager_System_Func_Cake_ServiceOrchestration_IServiceInstance_System_Boolean__" data-uid="Cake.ServiceOrchestration.ServiceManagerExtensions.DeployService(Cake.ServiceOrchestration.IServiceManager,System.Func{Cake.ServiceOrchestration.IServiceInstance,System.Boolean})">DeployService(IServiceManager, Func&lt;IServiceInstance, Boolean&gt;)</h4>
+              <div class="markdown level1 summary"><pre><code>Deploys all instances of the current service that match the given predicate.
+</code></pre></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static void DeployService(this IServiceManager manager, Func&lt;IServiceInstance, bool&gt; predicate)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Cake.ServiceOrchestration.IServiceManager.html#Cake_ServiceOrchestration_IServiceManager">IServiceManager</a></td>
+                    <td><em>manager</em></td>
+                    <td><p>The current service manager.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Func</span>&lt;<a class="xref" href="Cake.ServiceOrchestration.IServiceInstance.html#Cake_ServiceOrchestration_IServiceInstance">IServiceInstance</a>, <span class="xref">System.Boolean</span>&gt;</td>
+                    <td><em>predicate</em></td>
+                    <td><p>A predicate for which instances should be deployed.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/agc93/Cake.ServiceOrchestration/new/develop/docfx/apispec/new?filename=Cake_ServiceOrchestration_ServiceManagerExtensions_DeployService__1_Cake_ServiceOrchestration_IServiceManager_.md&amp;value=---%0Auid%3A%20Cake.ServiceOrchestration.ServiceManagerExtensions.DeployService%60%601(Cake.ServiceOrchestration.IServiceManager)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="Cake_ServiceOrchestration_ServiceManagerExtensions_DeployService__1_Cake_ServiceOrchestration_IServiceManager_" data-uid="Cake.ServiceOrchestration.ServiceManagerExtensions.DeployService``1(Cake.ServiceOrchestration.IServiceManager)">DeployService&lt;T&gt;(IServiceManager)</h4>
+              <div class="markdown level1 summary"><pre><code>Deploys all instances of the current service using the specified filter.
+</code></pre></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static void DeployService&lt;T&gt;(this IServiceManager manager)where T : IServiceFilter, new ()</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Cake.ServiceOrchestration.IServiceManager.html#Cake_ServiceOrchestration_IServiceManager">IServiceManager</a></td>
+                    <td><em>manager</em></td>
+                    <td><p>The current service manager.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><em>T</em></td>
+                    <td>An <a class="xref" href="Cake.ServiceOrchestration.IServiceFilter.html#Cake_ServiceOrchestration_IServiceFilter">IServiceFilter</a> filter implementation to filter the instances by.</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/agc93/Cake.ServiceOrchestration/new/develop/docfx/apispec/new?filename=Cake_ServiceOrchestration_ServiceManagerExtensions_RegisterConfigureAction_Cake_ServiceOrchestration_IServiceManager_System_Action_ICakeContext_Cake_ServiceOrchestration_IServiceInstance__.md&amp;value=---%0Auid%3A%20Cake.ServiceOrchestration.ServiceManagerExtensions.RegisterConfigureAction(Cake.ServiceOrchestration.IServiceManager%2CSystem.Action%7BICakeContext%2CCake.ServiceOrchestration.IServiceInstance%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               
               <h4 id="Cake_ServiceOrchestration_ServiceManagerExtensions_RegisterConfigureAction_Cake_ServiceOrchestration_IServiceManager_System_Action_ICakeContext_Cake_ServiceOrchestration_IServiceInstance__" data-uid="Cake.ServiceOrchestration.ServiceManagerExtensions.RegisterConfigureAction(Cake.ServiceOrchestration.IServiceManager,System.Action{ICakeContext,Cake.ServiceOrchestration.IServiceInstance})">RegisterConfigureAction(IServiceManager, Action&lt;ICakeContext, IServiceInstance&gt;)</h4>
@@ -295,7 +520,7 @@
               </table>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/agc93/Cake.ServiceOrchestration/new/master/docfx/apispec/new?filename=Cake_ServiceOrchestration_ServiceManagerExtensions_RegisterConfigureAction__1_Cake_ServiceOrchestration_IServiceManager_.md&amp;value=---%0Auid%3A%20Cake.ServiceOrchestration.ServiceManagerExtensions.RegisterConfigureAction%60%601(Cake.ServiceOrchestration.IServiceManager)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+                <a href="https://github.com/agc93/Cake.ServiceOrchestration/new/develop/docfx/apispec/new?filename=Cake_ServiceOrchestration_ServiceManagerExtensions_RegisterConfigureAction__1_Cake_ServiceOrchestration_IServiceManager_.md&amp;value=---%0Auid%3A%20Cake.ServiceOrchestration.ServiceManagerExtensions.RegisterConfigureAction%60%601(Cake.ServiceOrchestration.IServiceManager)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               
               <h4 id="Cake_ServiceOrchestration_ServiceManagerExtensions_RegisterConfigureAction__1_Cake_ServiceOrchestration_IServiceManager_" data-uid="Cake.ServiceOrchestration.ServiceManagerExtensions.RegisterConfigureAction``1(Cake.ServiceOrchestration.IServiceManager)">RegisterConfigureAction&lt;T&gt;(IServiceManager)</h4>
@@ -358,7 +583,7 @@ service.
               </table>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/agc93/Cake.ServiceOrchestration/new/master/docfx/apispec/new?filename=Cake_ServiceOrchestration_ServiceManagerExtensions_RegisterDeployAction_Cake_ServiceOrchestration_IServiceManager_System_Action_ICakeContext_Cake_ServiceOrchestration_IServiceInstance__.md&amp;value=---%0Auid%3A%20Cake.ServiceOrchestration.ServiceManagerExtensions.RegisterDeployAction(Cake.ServiceOrchestration.IServiceManager%2CSystem.Action%7BICakeContext%2CCake.ServiceOrchestration.IServiceInstance%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+                <a href="https://github.com/agc93/Cake.ServiceOrchestration/new/develop/docfx/apispec/new?filename=Cake_ServiceOrchestration_ServiceManagerExtensions_RegisterDeployAction_Cake_ServiceOrchestration_IServiceManager_System_Action_ICakeContext_Cake_ServiceOrchestration_IServiceInstance__.md&amp;value=---%0Auid%3A%20Cake.ServiceOrchestration.ServiceManagerExtensions.RegisterDeployAction(Cake.ServiceOrchestration.IServiceManager%2CSystem.Action%7BICakeContext%2CCake.ServiceOrchestration.IServiceInstance%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               
               <h4 id="Cake_ServiceOrchestration_ServiceManagerExtensions_RegisterDeployAction_Cake_ServiceOrchestration_IServiceManager_System_Action_ICakeContext_Cake_ServiceOrchestration_IServiceInstance__" data-uid="Cake.ServiceOrchestration.ServiceManagerExtensions.RegisterDeployAction(Cake.ServiceOrchestration.IServiceManager,System.Action{ICakeContext,Cake.ServiceOrchestration.IServiceInstance})">RegisterDeployAction(IServiceManager, Action&lt;ICakeContext, IServiceInstance&gt;)</h4>
@@ -411,7 +636,7 @@ service.
               </table>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/agc93/Cake.ServiceOrchestration/new/master/docfx/apispec/new?filename=Cake_ServiceOrchestration_ServiceManagerExtensions_RegisterDeployAction__1_Cake_ServiceOrchestration_IServiceManager_.md&amp;value=---%0Auid%3A%20Cake.ServiceOrchestration.ServiceManagerExtensions.RegisterDeployAction%60%601(Cake.ServiceOrchestration.IServiceManager)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+                <a href="https://github.com/agc93/Cake.ServiceOrchestration/new/develop/docfx/apispec/new?filename=Cake_ServiceOrchestration_ServiceManagerExtensions_RegisterDeployAction__1_Cake_ServiceOrchestration_IServiceManager_.md&amp;value=---%0Auid%3A%20Cake.ServiceOrchestration.ServiceManagerExtensions.RegisterDeployAction%60%601(Cake.ServiceOrchestration.IServiceManager)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               
               <h4 id="Cake_ServiceOrchestration_ServiceManagerExtensions_RegisterDeployAction__1_Cake_ServiceOrchestration_IServiceManager_" data-uid="Cake.ServiceOrchestration.ServiceManagerExtensions.RegisterDeployAction``1(Cake.ServiceOrchestration.IServiceManager)">RegisterDeployAction&lt;T&gt;(IServiceManager)</h4>
@@ -474,7 +699,7 @@ service.
               </table>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/agc93/Cake.ServiceOrchestration/new/master/docfx/apispec/new?filename=Cake_ServiceOrchestration_ServiceManagerExtensions_RegisterSetupAction_Cake_ServiceOrchestration_IServiceManager_System_Action_ICakeContext_Cake_ServiceOrchestration_IServiceInstance__.md&amp;value=---%0Auid%3A%20Cake.ServiceOrchestration.ServiceManagerExtensions.RegisterSetupAction(Cake.ServiceOrchestration.IServiceManager%2CSystem.Action%7BICakeContext%2CCake.ServiceOrchestration.IServiceInstance%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+                <a href="https://github.com/agc93/Cake.ServiceOrchestration/new/develop/docfx/apispec/new?filename=Cake_ServiceOrchestration_ServiceManagerExtensions_RegisterSetupAction_Cake_ServiceOrchestration_IServiceManager_System_Action_ICakeContext_Cake_ServiceOrchestration_IServiceInstance__.md&amp;value=---%0Auid%3A%20Cake.ServiceOrchestration.ServiceManagerExtensions.RegisterSetupAction(Cake.ServiceOrchestration.IServiceManager%2CSystem.Action%7BICakeContext%2CCake.ServiceOrchestration.IServiceInstance%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               
               <h4 id="Cake_ServiceOrchestration_ServiceManagerExtensions_RegisterSetupAction_Cake_ServiceOrchestration_IServiceManager_System_Action_ICakeContext_Cake_ServiceOrchestration_IServiceInstance__" data-uid="Cake.ServiceOrchestration.ServiceManagerExtensions.RegisterSetupAction(Cake.ServiceOrchestration.IServiceManager,System.Action{ICakeContext,Cake.ServiceOrchestration.IServiceInstance})">RegisterSetupAction(IServiceManager, Action&lt;ICakeContext, IServiceInstance&gt;)</h4>
@@ -527,7 +752,7 @@ service.
               </table>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/agc93/Cake.ServiceOrchestration/new/master/docfx/apispec/new?filename=Cake_ServiceOrchestration_ServiceManagerExtensions_RegisterSetupAction__1_Cake_ServiceOrchestration_IServiceManager_.md&amp;value=---%0Auid%3A%20Cake.ServiceOrchestration.ServiceManagerExtensions.RegisterSetupAction%60%601(Cake.ServiceOrchestration.IServiceManager)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+                <a href="https://github.com/agc93/Cake.ServiceOrchestration/new/develop/docfx/apispec/new?filename=Cake_ServiceOrchestration_ServiceManagerExtensions_RegisterSetupAction__1_Cake_ServiceOrchestration_IServiceManager_.md&amp;value=---%0Auid%3A%20Cake.ServiceOrchestration.ServiceManagerExtensions.RegisterSetupAction%60%601(Cake.ServiceOrchestration.IServiceManager)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               
               <h4 id="Cake_ServiceOrchestration_ServiceManagerExtensions_RegisterSetupAction__1_Cake_ServiceOrchestration_IServiceManager_" data-uid="Cake.ServiceOrchestration.ServiceManagerExtensions.RegisterSetupAction``1(Cake.ServiceOrchestration.IServiceManager)">RegisterSetupAction&lt;T&gt;(IServiceManager)</h4>
@@ -596,7 +821,7 @@ service.
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/agc93/Cake.ServiceOrchestration/new/master/docfx/apispec/new?filename=Cake_ServiceOrchestration_ServiceManagerExtensions.md&amp;value=---%0Auid%3A%20Cake.ServiceOrchestration.ServiceManagerExtensions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/agc93/Cake.ServiceOrchestration/new/develop/docfx/apispec/new?filename=Cake_ServiceOrchestration_ServiceManagerExtensions.md&amp;value=---%0Auid%3A%20Cake.ServiceOrchestration.ServiceManagerExtensions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

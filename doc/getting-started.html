@@ -114,7 +114,13 @@
 <p>Now, time for the big one:</p>
 <pre><code class="lang-csharp">service.DeployService();
 </code></pre><p>This one statement will automatically kick off your service manager&#39;s deployment logic, running your setup, deploy and configure actions on the instances you have defined.</p>
-<h2 id="summary">Summary</h2>
+<h3 id="filtering">Filtering</h3>
+<blockquote><p>Filtering is only available in 0.3 and later</p>
+</blockquote>
+<p>You can filter the instances you deploy by providing an <code>IServiceFilter</code> implementation, and your service manager will only deploy the instances returned by your filter.</p>
+<p>The library includes an extension method for <code>DeployService</code> that takes a LINQ-like <code>Func&lt;IServiceInstance, bool&gt;</code> predicate, so you can also filter using the following syntax:</p>
+<pre><code class="lang-csharp">service.DeployService(i =&gt; i.Tags.Contains(&quot;Stable&quot;));
+</code></pre><h2 id="summary">Summary</h2>
 <p>That&#39;s it! The general design is: define, register actions, create instances, deploy. </p>
 
             </article>
@@ -125,7 +131,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/agc93/Cake.ServiceOrchestration/blob/master/docfx/doc/getting-started.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/agc93/Cake.ServiceOrchestration/blob/develop/docfx/doc/getting-started.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
