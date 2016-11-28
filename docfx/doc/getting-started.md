@@ -91,6 +91,30 @@ The library includes an extension method for `DeployService` that takes a LINQ-l
 service.DeployService(i => i.Tags.Contains("Stable"));
 ```
 
+### Task Extension
+
+> Task extensions are only available in 0.3 and later
+
+You can also use a new extension method to simplify "deploy-only" task declarations. Using this lets you simplify the following code:
+
+```csharp
+Task("Service-Test")
+.WithCriteria(() => service != null)
+.Does(() => {
+	service.DeployService();
+});
+```
+
+into this shorter syntax, with or without filtering:
+
+```csharp
+Task("Deploy-Service")
+.Deploys(service);
+
+Task("Deploy-Stable")
+.Deploys(service, i => i.Tags.Contains("Stable"));
+```
+
 ## Summary
 
 That's it! The general design is: define, register actions, create instances, deploy. 
