@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using Cake.Core;
 using System.Linq;
+using Cake.Core;
 using Cake.Core.Diagnostics;
 
 namespace Cake.ServiceOrchestration
@@ -85,9 +85,29 @@ namespace Cake.ServiceOrchestration
         /// <remarks>Sequentially executes the registered setup, deployment and configuration actions for each instance.</remarks>
         public void DeployService()
         {
+            DeployService(new NoFilter());
+        }
+
+        private class NoFilter : IServiceFilter {
+            public IEnumerable<IServiceInstance> GetInstances(IEnumerable<IServiceInstance> instances)
+        {
+            return instances;
+        }
+        }
+
+        /// <summary>
+        ///     Deploys all instances of the current service that match the given predicate.
+        /// </summary>
+        /// ///
+        /// <remarks>
+        ///     Sequentially executes the registered setup, deployment and configuration actions for each instance that
+        ///     matches the given predicate.
+        /// </remarks>
+        public void DeployService(IServiceFilter filter)
+        {
             try
             {
-                foreach (var instance in Instances)
+                foreach (var instance in filter.GetInstances(Instances))
                 {
                     RunActions(SetupActions, DeployPhase.Setup, instance);
                     RunActions(DeployActions, DeployPhase.Deploy, instance);

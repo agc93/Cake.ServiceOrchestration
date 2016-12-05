@@ -1,0 +1,8 @@
+- name: Basic Sample
+  href: basic-sample.md
+- name: Lambda Action Syntax
+  href: lambda-actions.md
+- name: IIS Action examples
+  href: iis-actions.md
+- name: MSBuild Action examples
+  href: msbuild-actions.md

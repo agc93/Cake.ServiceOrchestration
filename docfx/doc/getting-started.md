@@ -79,6 +79,42 @@ service.DeployService();
 
 This one statement will automatically kick off your service manager's deployment logic, running your setup, deploy and configure actions on the instances you have defined.
 
+### Filtering
+
+> Filtering is only available in 0.3 and later
+
+You can filter the instances you deploy by providing an `IServiceFilter` implementation, and your service manager will only deploy the instances returned by your filter.
+
+The library includes an extension method for `DeployService` that takes a LINQ-like `Func<IServiceInstance, bool>` predicate, so you can also filter using the following syntax:
+
+```csharp
+service.DeployService(i => i.Tags.Contains("Stable"));
+```
+
+### Task Extension
+
+> Task extensions are only available in 0.3 and later
+
+You can also use a new extension method to simplify "deploy-only" task declarations. Using this lets you simplify the following code:
+
+```csharp
+Task("Service-Test")
+.WithCriteria(() => service != null)
+.Does(() => {
+	service.DeployService();
+});
+```
+
+into this shorter syntax, with or without filtering:
+
+```csharp
+Task("Deploy-Service")
+.Deploys(service);
+
+Task("Deploy-Stable")
+.Deploys(service, i => i.Tags.Contains("Stable"));
+```
+
 ## Summary
 
 That's it! The general design is: define, register actions, create instances, deploy. 

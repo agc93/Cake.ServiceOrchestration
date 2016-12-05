@@ -44,6 +44,16 @@
           "obj/**",
           "_site/**"
         ]
+      },
+      {
+        "files": [
+          "samples/**.md",
+          "samples/**.yml"
+        ],
+        "exclude": [
+          "obj/**",
+          "_site/**"
+        ]
       }
     ],
     "resource": [

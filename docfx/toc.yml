@@ -4,3 +4,6 @@
 - name: Reference
   href: api/
   homepage: api/index.md
+- name: Samples
+  href: samples/
+  homepage: samples/index.md
